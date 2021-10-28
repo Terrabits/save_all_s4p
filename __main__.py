@@ -10,7 +10,8 @@ from rohdeschwarz.instruments.vna import Vna
 
 
 # constants
-PORTS = [1, 2, 3, 4]
+PORTS          = [1, 2, 3, 4]
+TEN_SECONDS_MS = 10 * 1000
 
 
 # data path
@@ -26,6 +27,10 @@ vna.open_log('vna.log')
 for set_name in vna.sets:
     # select set
     vna.active_set = set_name
+
+    # pause sweeps
+    vna.manual_sweep = True
+    vna.pause(timeout_ms=TEN_SECONDS_MS)
 
     # save touchstone files
     for index in vna.channels:
