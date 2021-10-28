@@ -23,3 +23,13 @@ The result should be a folder named `save_all_s4p` with the following contents:
 Double-click `run.bat` to save all data on the VNA. Data is saved in the `data/` folder, organized by timestamp.
 
 ![Data folder example](doc/images/example-data.png)
+
+## Set Continuous Sweep (Optional)
+
+A side-effect of `save_all_s4p` is that continuous measurements are stopped so that consistent data is present before it is saved.
+
+When using the VNA manually, you may want to restore `Continuous Sweep` mode by performing the following:
+
+1.  Click the `Sweep` hard key
+2.  Select the `Sweep Control` soft key (tab)
+3.  Click the `All Channels Continuous` button to resume measurements
