@@ -19,7 +19,7 @@ data_path.mkdir(parents=True)
 
 # connect
 vna = Vna()
-vna.open_tcp('192.168.86.199')
+vna.open_tcp()
 vna.open_log('vna.log')
 
 
