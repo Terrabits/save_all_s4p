@@ -11,4 +11,11 @@ cd "$ROOT_DIR"
 
 # zip
 cd dist
-zip -r save_all_s4p save_all_s4p/ run.bat
+
+mv save_all_s4p app
+
+mkdir save_all_s4p
+mv app save_all_s4p/
+cp run.bat save_all_s4p/
+
+zip -r save_all_s4p.zip save_all_s4p/
