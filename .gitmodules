@@ -1,0 +1,3 @@
+[submodule "lib/scikit-rf"]
+	path = lib/scikit-rf
+	url = git@github.com:Terrabits/scikit-rf.git
