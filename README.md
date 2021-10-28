@@ -18,6 +18,8 @@ The result should be a folder named `save_all_s4p` with the following contents:
 
 ![folder contents](doc/images/save-all-s4p-folder-contents.png)
 
+## Run
+
 Double-click `run.bat` to save all data on the VNA. Data is saved in the `data/` folder, organized by timestamp.
 
 ![Data folder example](doc/images/example-data.png)
