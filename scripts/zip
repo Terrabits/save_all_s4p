@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+ROOT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )/.."
+
+
+# exit on error
+set -e
+
+
+cd "$ROOT_DIR"
+
+
+# zip
+cd dist
+zip -r save_all_s4p save_all_s4p/ run.bat
